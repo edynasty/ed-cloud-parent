@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.txp1997</groupId>
+    <groupId>io.github.edynasty</groupId>
     <artifactId>ed-cloud-parent</artifactId>
     <version>0.0.1</version>
     <packaging>pom</packaging>
 
     <name>ed-cloud-parent</name>
     <description>ed-cloud-parent</description>
-    <url>https://github.com/edynasty/ew-cloud-parent</url>
+    <url>https://github.com/edynasty/ed-cloud-parent</url>
 
     <!-- 开发者信息 -->
     <developers>
@@ -34,9 +34,9 @@
 
     <!-- SCM 信息 -->
     <scm>
-        <url>https://github.com/edynasty/ew-cloud-parent</url>
-        <connection>scm:git:git://github.com/edynasty/ew-cloud-parent.git</connection>
-        <developerConnection>scm:git:ssh://github.com/edynasty/ew-cloud-parent.git</developerConnection>
+        <url>https://github.com/edynasty/ed-cloud-parent</url>
+        <connection>scm:git:git://github.com/edynasty/ed-cloud-parent.git</connection>
+        <developerConnection>scm:git:ssh://github.com/edynasty/ed-cloud-parent.git</developerConnection>
     </scm>
 
     <!--统一管理jar包版本-->
