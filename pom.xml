@@ -5,19 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.txp1997</groupId>
-    <artifactId>ew-cloud</artifactId>
+    <artifactId>ed-cloud-parent</artifactId>
     <version>0.0.1</version>
     <packaging>pom</packaging>
 
-    <name>ew-cloud-parent</name>
-    <description>ew-cloud-parent</description>
-    <url>https://github.com/txp1997/ew-cloud-parent</url>
+    <name>ed-cloud-parent</name>
+    <description>ed-cloud-parent</description>
+    <url>https://github.com/edynasty/ew-cloud-parent</url>
 
     <!-- 开发者信息 -->
     <developers>
         <developer>
-            <id>txp1997</id>
-            <name>txp1997</name>
+            <id>edynasty</id>
+            <name>tangxingpeng</name>
             <email>tangxingpeng@hotmail.com</email>
             <timezone>+8</timezone>
         </developer>
@@ -34,9 +34,9 @@
 
     <!-- SCM 信息 -->
     <scm>
-        <url>https://github.com/txp1997/ew-cloud-parent</url>
-        <connection>scm:git:git://github.com/txp1997/ew-cloud-parent.git</connection>
-        <developerConnection>scm:git:ssh://github.com/txp1997/ew-cloud-parent.git</developerConnection>
+        <url>https://github.com/edynasty/ew-cloud-parent</url>
+        <connection>scm:git:git://github.com/edynasty/ew-cloud-parent.git</connection>
+        <developerConnection>scm:git:ssh://github.com/edynasty/ew-cloud-parent.git</developerConnection>
     </scm>
 
     <!--统一管理jar包版本-->
