@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ew</groupId>
+    <groupId>io.github.txp1997</groupId>
     <artifactId>ew-cloud</artifactId>
     <version>0.0.1</version>
     <packaging>pom</packaging>
@@ -18,6 +18,7 @@
             <id>txp1997</id>
             <name>txp1997</name>
             <email>tangxingpeng@hotmail.com</email>
+            <timezone>+8</timezone>
         </developer>
     </developers>
 
@@ -164,7 +165,6 @@
         <javers-core.version>6.14.0</javers-core.version>
         <!-- maven插件 -->
         <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
-        <maven-gpg-plugin.verison>1.6</maven-gpg-plugin.verison>
     </properties>
 
     <dependencies>
@@ -847,22 +847,40 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>${maven-gpg-plugin.verison}</version>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>central</id>
+            <build>
+                <plugins>
+                    <!-- GPG -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.6</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>0.6.0</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <publishingServerId>oss</publishingServerId>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>
