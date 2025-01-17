@@ -6,7 +6,7 @@
 
     <groupId>io.github.edynasty</groupId>
     <artifactId>ed-cloud-parent</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <packaging>pom</packaging>
 
     <name>ed-cloud-parent</name>
@@ -41,7 +41,7 @@
 
     <!--统一管理jar包版本-->
     <properties>
-        <env.project.version>0.0.1</env.project.version>
+        <env.project.version>0.0.4</env.project.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -204,6 +204,90 @@
     <!--如果没写版本,从父层面找,找到了就直接用,全局统一-->
     <dependencyManagement>
         <dependencies>
+            <!-- 自定义starter -->
+            <!-- 通用核心模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-core</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 通用数据库模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-datasource</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 公共excel模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-excel</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 公共调用核心模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-executor-core</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 公共调用http核心模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-executor-http</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 公共调用magic-api核心模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-executor-magic-api</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 公共表达式模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-express</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 公共分布式锁模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-lock-core</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 公共分布式锁模块redis -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-lock-redis</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 公共日志核心模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-log-core</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- mybatis mate -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-mybatis-mate</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-mybatis-mate-annotation</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 公共reids模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-redis</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <!-- 公共skywalking模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-skywalking</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
             <!-- spring cloud 依赖 -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
