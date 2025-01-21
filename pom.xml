@@ -47,7 +47,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>8</java.version>
-        <ed-common-parent.version>0.0.7</ed-common-parent.version>
         <spring-cloud-alibaba-dependencies.version>2021.0.4.0</spring-cloud-alibaba-dependencies.version>
         <spring-boot-dependencies.version>2.7.18</spring-boot-dependencies.version>
         <spring-cloud-dependencies.version>2021.0.4</spring-cloud-dependencies.version>
@@ -206,12 +205,113 @@
     <dependencyManagement>
         <dependencies>
             <!-- 自定义starter -->
+            <!-- 通用核心模块 -->
             <dependency>
                 <groupId>io.github.edynasty</groupId>
-                <artifactId>ed-common-parent</artifactId>
-                <version>${ed-common-parent.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
+                <artifactId>ed-common-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 通用数据库模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-datasource</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共excel模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-excel</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共调用核心模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-executor-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共调用http核心模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-executor-http</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共调用magic-api核心模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-executor-magic-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共表达式模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-express</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共分布式锁自动配置模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-lock-autoconfigure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共分布式锁核心模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-lock-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共分布式锁redis模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-lock-redis</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共分布式锁redis starter模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-lock-redis-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共日志自动配置模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-log-autoconfigure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共日志核心模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-log-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共日志kafka starter模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-log-kafka</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共日志kafka模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-log-kafka-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共日志logger模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-log-logger</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共日志logger starter模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-log-logger-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- 公共skywalking模块 -->
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-skywalking</artifactId>
+                <version>${project.version}</version>
             </dependency>
             <!-- spring cloud 依赖 -->
             <dependency>
