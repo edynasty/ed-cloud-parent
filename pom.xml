@@ -6,7 +6,7 @@
 
     <groupId>io.github.edynasty</groupId>
     <artifactId>ed-cloud-parent</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.6</version>
     <packaging>pom</packaging>
 
     <name>ed-cloud-parent</name>
@@ -41,7 +41,7 @@
 
     <!--统一管理jar包版本-->
     <properties>
-        <env.project.version>0.0.4</env.project.version>
+        <env.project.version>0.0.5</env.project.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -247,6 +247,11 @@
                 <artifactId>ed-common-express</artifactId>
                 <version>${env.project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-lock-autoconfigure</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
             <!-- 公共分布式锁模块 -->
             <dependency>
                 <groupId>io.github.edynasty</groupId>
@@ -259,10 +264,30 @@
                 <artifactId>ed-common-lock-redis</artifactId>
                 <version>${env.project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-lock-redis-starter</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-log-autoconfigure</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
             <!-- 公共日志核心模块 -->
             <dependency>
                 <groupId>io.github.edynasty</groupId>
                 <artifactId>ed-common-log-core</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-log-logger-starter</artifactId>
+                <version>${env.project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.edynasty</groupId>
+                <artifactId>ed-common-log-kafka-starter</artifactId>
                 <version>${env.project.version}</version>
             </dependency>
             <!-- mybatis mate -->
